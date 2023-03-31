@@ -1,5 +1,5 @@
 import './Calendar.css'
-import SystemTime from './SystemTime'
+import SystemTime from './SystemTime/SystemTime'
 import SystemDate from './SystemDate'
 import DateMonth from './DateMonth'
 import GridCalendar from './GridCalendar'
@@ -14,9 +14,9 @@ export default function Calendar(){
     const pubsub = new PubSub()
     return (
         <div className='calendar'>
-            <CalendarContext.Provider value={pubsub}>                                             
-                <SystemTime/>
+            <CalendarContext.Provider value={pubsub}>                                                             
                 <SystemDate/>                
+                <SystemTime/>
                 <div className='separator'>
                     <div className='header'>
                         <div className='datemonth'>
