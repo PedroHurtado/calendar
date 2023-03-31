@@ -1,0 +1,25 @@
+.day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:gray;   
+    cursor: pointer;
+    height: 2rem;
+    
+}
+.day:hover{
+    outline: 2px solid blue;
+    
+}
+.is-in-month{
+    color:black
+}
+.is-today{
+    background-color: blue;
+    color:white;
+    border: 2px solid;
+    outline: 2px solid blue;
+}
+.is-today:hover{
+    outline: 2px solid black;
+}
